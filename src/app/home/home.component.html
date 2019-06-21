@@ -1,0 +1,19 @@
+
+
+<section class="header text-center">
+    <div>
+        <h3>Table Of Users
+            <i class="fas fa-star"></i>
+        </h3>
+    </div>
+</section>
+<div class="container tableCont">
+    <ng2-smart-table
+        [settings]="settings"
+        [source]="data"
+        (deleteConfirm)="onDeleteConfirm($event)" 
+        (createConfirm)="onAdd($event)" 
+        (editConfirm)="onEdit($event)">
+    </ng2-smart-table>
+</div>
+
