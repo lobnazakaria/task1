@@ -1,5 +1,10 @@
 
-
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link"  *ngIf="isadmin">Admin <i class="fas fa-user-astronaut"></i></a>
+        <a class="nav-item nav-link logout" (click)="logout()">Logout</a>
+    </div>
+</nav>
 <section class="header text-center">
     <div>
         <h3>Table Of Users

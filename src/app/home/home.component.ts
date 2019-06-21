@@ -110,4 +110,8 @@ export class HomeComponent implements OnInit {
         event.confirm.reject();
       }
     }
+    logout() {
+      this.authService.logout();
+      this.router.navigate(['/login']);
+  }
 }
